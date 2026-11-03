@@ -1,0 +1,11 @@
+mkdir cli_test_folder
+cd cli_test_folder
+touch doc1.txt
+touch "doc with space.txt"
+ls
+info doc1.txt
+up
+du cli_test_folder
+rm cli_test_folder -r
+y
+exit
