@@ -49,3 +49,4 @@ Result<std::string> readTextPreview(const std::filesystem::path& path, std::size
 }
 
 } // namespace fx
+

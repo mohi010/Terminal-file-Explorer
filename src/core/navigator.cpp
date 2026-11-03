@@ -140,3 +140,4 @@ bool Navigator::canGoForward() const {
 }
 
 } // namespace fx
+

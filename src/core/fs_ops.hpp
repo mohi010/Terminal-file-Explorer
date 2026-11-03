@@ -42,3 +42,4 @@ Result<bool> movePath(const std::filesystem::path& from, const std::filesystem::
 Result<SpaceInfo> getSpace(const std::filesystem::path& path);
 
 } // namespace fx
+

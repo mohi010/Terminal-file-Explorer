@@ -35,3 +35,4 @@ int main() {
 
     return fx::test::reportSummary("Format Tests");
 }
+

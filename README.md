@@ -101,3 +101,4 @@ Full viva preparation materials and technical specifications are available in th
 - [`docs/OS_CONCEPTS.md`](docs/OS_CONCEPTS.md): Operating systems theoretical mapping (Silberschatz Unit IV).
 - [`docs/VIVA_QA.md`](docs/VIVA_QA.md): 42 viva examination questions and answers.
 - [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md): 5-minute practical viva demo walkthrough.
+

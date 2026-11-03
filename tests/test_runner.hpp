@@ -72,3 +72,4 @@ inline int reportSummary(const std::string& suiteName) {
 }
 
 } // namespace fx::test
+

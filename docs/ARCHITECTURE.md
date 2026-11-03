@@ -67,3 +67,4 @@ The **OS File Explorer** is built with a strict three-layer decoupled architectu
 | `src/gui/models.hpp/.cpp` | GUI | Custom `QAbstractTableModel` for files and folders | Model-View-Controller presentation architecture |
 | `src/gui/mainwindow.hpp/.cpp`| GUI | Main window layout, lazy-loaded folder tree, shortcuts, context menu | Desktop shell user interface |
 | `src/gui/main.cpp` | GUI | Qt application entry point and event loop | Windowing system event loop |
+

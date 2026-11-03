@@ -23,3 +23,4 @@ std::string formatTime(std::filesystem::file_time_type fileTime);
 std::string formatPermissions(std::filesystem::perms permissions);
 
 } // namespace fx
+

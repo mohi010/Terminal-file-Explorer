@@ -54,3 +54,4 @@ std::string cyan(const std::string& text) {
 }
 
 } // namespace fx::cli
+

@@ -106,3 +106,4 @@ int main() {
 
     return test::reportSummary("API Contract Verification Tests");
 }
+

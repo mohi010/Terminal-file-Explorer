@@ -88,3 +88,4 @@ const EntryInfo* FileTableModel::entryAt(int row) const {
 }
 
 } // namespace fx::gui
+

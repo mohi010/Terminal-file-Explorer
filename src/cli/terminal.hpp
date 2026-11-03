@@ -33,3 +33,4 @@ std::string yellow(const std::string& text);
 std::string cyan(const std::string& text);
 
 } // namespace fx::cli
+

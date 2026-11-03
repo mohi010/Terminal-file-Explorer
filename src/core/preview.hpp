@@ -21,3 +21,4 @@ Result<std::string> readTextPreview(const std::filesystem::path& path, std::size
 bool isBinaryContent(const char* buffer, std::size_t length);
 
 } // namespace fx
+

@@ -55,3 +55,4 @@ void handleSpace(CommandContext& ctx);
 void handleOsDemo(CommandContext& ctx);
 
 } // namespace fx::cli
+

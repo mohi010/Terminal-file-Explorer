@@ -27,3 +27,4 @@ Result<std::vector<EntryInfo>> searchByName(
 Result<std::uintmax_t> directorySize(const std::filesystem::path& path);
 
 } // namespace fx
+

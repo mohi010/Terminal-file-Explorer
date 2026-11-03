@@ -25,3 +25,4 @@ Result<bool> validateFileName(const std::string& name);
 bool isDestinationInsideSource(const std::filesystem::path& src, const std::filesystem::path& dest);
 
 } // namespace fx
+

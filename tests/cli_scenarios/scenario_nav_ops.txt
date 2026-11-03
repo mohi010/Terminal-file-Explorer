@@ -9,3 +9,4 @@ du cli_test_folder
 rm cli_test_folder -r
 y
 exit
+

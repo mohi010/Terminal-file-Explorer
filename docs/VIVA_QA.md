@@ -145,3 +145,4 @@ This document contains 42 questions and precise answers tailored for university 
 
 42. **Why does the GUI use a custom `QAbstractTableModel` instead of `QFileSystemModel`?**  
     *Answer:* To preserve the core library (`fxcore`) as the single source of truth for all filesystem logic and operations.
+

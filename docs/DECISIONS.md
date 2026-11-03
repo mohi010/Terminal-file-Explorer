@@ -11,3 +11,4 @@ This document records architectural, toolchain, and design choices made during d
 - **Filesystem Implementation:** Standard C++17 `<filesystem>` (`std::filesystem`), avoiding non-standard extensions or C++20-only features.
 - **Path normalisation decision:** Use `std::filesystem::weakly_canonical` following `std::filesystem::absolute` to ensure symlinks and relative path components (`.` and `..`) are cleanly resolved without crashing if leaf names do not yet exist.
 - **Safety boundaries:** Block dangerous operations on drive roots (e.g., `C:\`), system directories (`C:\Windows`, `/etc`, etc.), and user profile root.
+

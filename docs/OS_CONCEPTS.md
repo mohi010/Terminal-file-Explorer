@@ -64,3 +64,4 @@ Operating systems protect multi-user systems through access control lists (ACLs)
 
 The C++17 `<filesystem>` library does not perform raw disk access; it is an abstract portability wrapper over native OS system calls.
 - In `src/core/os_layer_demo.cpp`, direct invocations of Win32 `FindFirstFileW`/`FindNextFileW` and POSIX `opendir`/`readdir` demonstrate to students and examiners the concrete C system calls executing under the hood.
+

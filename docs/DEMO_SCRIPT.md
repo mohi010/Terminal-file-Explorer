@@ -79,3 +79,4 @@ Use this structured walkthrough for presenting the project to the professor or v
    ctest --output-on-failure
    ```
    *Show that 100% of unit tests, API contracts, and stress benchmarks pass with zero warnings.*
+

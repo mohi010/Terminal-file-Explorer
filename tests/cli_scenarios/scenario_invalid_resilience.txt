@@ -3,3 +3,4 @@ touch bad:file*.txt
 rename nonexistent.txt target.txt
 invalid_cmd_should_not_crash
 exit
+

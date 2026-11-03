@@ -435,3 +435,4 @@ void MainWindow::onShowProperties() {
 }
 
 } // namespace fx::gui
+
