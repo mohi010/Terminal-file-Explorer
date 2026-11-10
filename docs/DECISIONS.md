@@ -12,3 +12,8 @@ This document records architectural, toolchain, and design choices made during d
 - **Path normalisation decision:** Use `std::filesystem::weakly_canonical` following `std::filesystem::absolute` to ensure symlinks and relative path components (`.` and `..`) are cleanly resolved without crashing if leaf names do not yet exist.
 - **Safety boundaries:** Block dangerous operations on drive roots (e.g., `C:\`), system directories (`C:\Windows`, `/etc`, etc.), and user profile root.
 
+## Phase 8: Qt GUI Architecture & Deployment
+- **UI Framework:** Qt 6.8.0 Widgets (`QMainWindow`, `QTableView`, `QTreeWidget`, `QSplitter`, `QDockWidget`). Compatible with Qt 5.15 fallback via CMake `find_package(Qt6 ... QUIET)` and `find_package(Qt5 ...)`.
+- **Presentation Abstraction:** Implemented custom `FileTableModel` inheriting from `QAbstractTableModel`. Explicitly avoided `QFileSystemModel` and `QDir` to adhere to PRD specification and ensure `fxcore` remains the single source of truth for all filesystem operations.
+- **Portability & Deployment:** Used `windeployqt` to bundle required Qt6 platform plugins (`platforms/qwindows.dll`), styles, and MinGW runtime libraries (`libgcc_s_seh-1.dll`, `libstdc++-6.dll`, `libwinpthread-1.dll`) into the output directory, enabling standalone execution.
+

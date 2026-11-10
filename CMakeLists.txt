@@ -78,6 +78,8 @@ if(TARGET Qt6::Widgets OR TARGET Qt5::Widgets)
     set(CMAKE_AUTOUIC ON)
 
     set(GUI_SOURCES
+        src/gui/mac_theme.hpp
+        src/gui/mac_theme.cpp
         src/gui/models.hpp
         src/gui/models.cpp
         src/gui/mainwindow.hpp

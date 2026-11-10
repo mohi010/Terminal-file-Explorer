@@ -17,7 +17,7 @@ Mini Project: OS File Explorer (C++17 Core, Terminal CLI + Qt GUI)
 | **Phase 5** | Search, Preview, Size, Space | **Completed** | Implemented `searchByName` (depth-limited, no symlink loops), `directorySize`, `readTextPreview` (binary detection via magic bytes), and `getSpace`. Passed `test_search.cpp`. |
 | **Phase 6** | Terminal CLI Front End | **Completed** | Implemented REPL loop, quote tokenizer, aligned tabular formatting, ANSI colors, and Windows UTF-8/virtual terminal setup. All 3 scenario scripts in `tests/cli_scenarios` passed. |
 | **Phase 7** | Hardening & Bug-Fix Loop | **Completed** | Ran API contract verification (`test_api_contract.cpp`), static analysis with `cppcheck`, and stress benchmark on 10,000 files (`test_stress.cpp`). Verified 2 consecutive clean runs. |
-| **Phase 8** | Qt GUI Front End | **Completed** | Code fully implemented in `src/gui/` (`mainwindow.hpp/.cpp`, `models.hpp/.cpp`, `main.cpp`). CMake automatically detects Qt6/Qt5 and builds `fx_gui` if installed, falling back gracefully to CLI if not. |
+| **Phase 8** | Qt GUI Front End (macOS Finder Design) | **Completed** | Full macOS Sonoma / Sequoia Finder aesthetic in `src/gui/` (`mainwindow.hpp/.cpp`, `models.hpp/.cpp`, `mac_theme.hpp/.cpp`). Features traffic lights (🔴🟡🟢), dark/light mode toggle, vector macOS azure blue folders, favorites sidebar, and Get Info inspector. Built with Qt6 Widgets and bundled with `windeployqt`. |
 | **Phase 9** | Documentation & Viva Pack | **Completed** | Created `README.md`, `ARCHITECTURE.md`, `OS_CONCEPTS.md`, `VIVA_QA.md` (42 Q&As), `DEMO_SCRIPT.md`, `API_CONTRACT.md`, `DECISIONS.md`, and `BUGLOG.md`. |
 
 ---

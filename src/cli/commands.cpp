@@ -24,13 +24,25 @@ void printNativeDirectoryEntries(const std::string& directoryPath);
 namespace fx::cli {
 
 std::vector<std::string> tokenize(const std::string& line) {
+    std::string cleanLine = line;
+    // Strip UTF-8 Byte Order Mark (BOM) if present at start of stream
+    if (cleanLine.size() >= 3 &&
+        static_cast<unsigned char>(cleanLine[0]) == 0xEF &&
+        static_cast<unsigned char>(cleanLine[1]) == 0xBB &&
+        static_cast<unsigned char>(cleanLine[2]) == 0xBF) {
+        cleanLine = cleanLine.substr(3);
+    }
+    while (!cleanLine.empty() && (cleanLine.back() == '\r' || cleanLine.back() == '\n')) {
+        cleanLine.pop_back();
+    }
+
     std::vector<std::string> tokens;
     std::string current;
     bool inQuotes = false;
     char quoteChar = '\0';
 
-    for (size_t i = 0; i < line.length(); ++i) {
-        char ch = line[i];
+    for (size_t i = 0; i < cleanLine.length(); ++i) {
+        char ch = cleanLine[i];
 
         if (inQuotes) {
             if (ch == quoteChar) {

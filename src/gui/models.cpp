@@ -5,6 +5,7 @@
 // ============================================================================
 
 #include "models.hpp"
+#include "mac_theme.hpp"
 #include "../core/format.hpp"
 #include <QIcon>
 #include <QApplication>
@@ -52,9 +53,9 @@ QVariant FileTableModel::data(const QModelIndex& index, int role) const {
         }
     } else if (role == Qt::DecorationRole && index.column() == ColName) {
         if (entry.type == EntryType::Directory) {
-            return QApplication::style()->standardIcon(QStyle::SP_DirIcon);
+            return MacTheme::folderIcon(96);
         }
-        return QApplication::style()->standardIcon(QStyle::SP_FileIcon);
+        return MacTheme::fileIcon(QString::fromStdString(entry.path.extension().string()), 96);
     }
 
     return QVariant();
